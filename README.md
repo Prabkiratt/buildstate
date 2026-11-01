@@ -6,7 +6,7 @@ A responsive, frontend-only real estate website for an academic project. Built w
 
 1. Home — property search, featured homes and neighbourhoods.
 2. Properties — six sample listings, location/type/buy-or-rent/budget filters, sorting, saved homes and property detail dialogs.
-3. About & Contact — project introduction and validated demo enquiry form.
+3. About & Contact — project introduction and validated WhatsApp enquiry form.
 4. Login — create account, log in, demo account, profile and logout.
 
 ## Run locally
@@ -37,13 +37,13 @@ Alternatively, from the project directory use the official Vercel CLI (`npx verc
 
 - Home: choose Model Town and Independent house, then Find a home.
 - Properties: try rent, change a budget, sort, save a home with the heart, and select Saved homes.
-- Open View home, then Enquire about this home. The contact form is prefilled.
+- Open View home, then Enquire on WhatsApp for a property-specific message, or Plan a visit to enter your details before continuing to WhatsApp.
 - Login: select Create account and enter made-up details with an 8+ character password. Log out, then log in with the same details.
 - Explore demo account works without registration. Accounts, saved properties and enquiries persist only in the same browser and origin.
 
 ## Frontend demo scope
 
-Login is a learning demonstration, not secure authentication. A SHA-256 password digest and account metadata are stored in localStorage. Do not use real passwords or personal information. There is no server-side access control, cross-device login, or password recovery. Saved homes belong to the current browser, not separate accounts. The enquiry form saves the latest demo enquiry locally; it sends no email and makes no real appointment.
+Login is a learning demonstration, not secure authentication. A SHA-256 password digest and account metadata are stored in localStorage. Do not use real passwords or personal information. There is no server-side access control, cross-device login, or password recovery. Saved homes belong to the current browser, not separate accounts. The enquiry form opens WhatsApp to +91 88723 26607 with the visitor’s name, email, optional phone, preferred date, message and selected property prefilled. The visitor reviews and sends the message in WhatsApp; the website does not send it automatically or confirm appointments.
 
 Listings, names, prices and locations are fictional examples, not real property offers. The 15 house photos were supplied by the user and are bundled locally in assets/houses. They do not verify the illustrative listing addresses. The website does not claim to be an operating agency.
 
